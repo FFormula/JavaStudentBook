@@ -1,9 +1,14 @@
 package data;
 
+import file.Storage;
+
 import java.util.ArrayList;
 
+/**
+ * Visu pazymiu saraso saugojimas
+ */
 public class Book {
-    ArrayList<Point> list;
+    private ArrayList<Point> list;
 
     public Book() {
         list = new ArrayList<>();
@@ -17,6 +22,10 @@ public class Book {
         return list;
     }
 
+    /**
+     * Suskaiciuoti pazymiu vidurki
+     * @return pazymiu vidurki
+     */
     public double getAveragePoint() {
         if (list.size() == 0)
             return 0;

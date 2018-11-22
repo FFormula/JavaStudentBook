@@ -2,6 +2,9 @@ package file;
 
 import java.util.Scanner;
 
+/**
+ * Duomenu ivedimas is klaviaturos, isvedimas i ekrana
+ */
 public class Dialog {
 
     Scanner scanner = new Scanner(System.in);
@@ -18,6 +21,11 @@ public class Dialog {
         return scanner.nextLine();
     }
 
+    /**
+     * Prasymas ivesti teksta
+     * @param message prasymas
+     * @return ivestas tekstas
+     */
     public String input(String message) {
         print(message);
         return input();

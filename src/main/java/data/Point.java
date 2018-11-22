@@ -1,10 +1,19 @@
 package data;
 
+/**
+ * Pzymiu irasas
+ */
 public class Point {
     private String subject;
     private String teacher;
     private int point;
 
+    /**
+     * Pazymio registravimas
+     * @param subject dalyko pavadinimas
+     * @param teacher destytojo vardas/pavarde
+     * @param point pazymis nuo 1 iki 10
+     */
     public Point(String subject, String teacher, int point) {
         if (point < 1 || point > 10)
             throw new IllegalArgumentException(
